@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/anims.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/accueil.css">
+    <link rel="stylesheet" href="css/accueil-responsive.css">
+    <title>Rémi Caulier</title>    
+
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+    <main>
+        <div class="background">
+            <svg viewBox="0 0 1400 8600" fill="none" stroke="white">
+                <path id="cpu" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"
+                    d="m 300 280 h 800 v 400 h -800 v -400 m 300 0 v -100 l -100 -100 a 1 1 0 0 0 -50 -50 a 1 1 0 0 0 50 50 m 200 200 v -200 a 1 1 0 0 0 0 -65 a 1 1 0 0 0 0 65 m 100 200 v -100 l 100 -100 a 1 1 0 0 0 50 -50 a 1 1 0 0 0 -50 50 m 200 300 h 100 l 100 -100 a 1 1 0 0 0 50 -50 a 1 1 0 0 0 -50 50 m -200 200 h 200 a 1 1 0 0 0 65 0 a 1 1 0 0 0 -65 0 m -200 100 h 100 l 100 100 a 1 1 0 0 0 50 50 a 1 1 0 0 0 -50 -50 m -500 0 v 100 l 100 100 a 1 1 0 0 0 50 50 a 1 1 0 0 0 -50 -50 m -200 -200 v 200 a 1 1 0 0 0 0 65 a 1 1 0 0 0 0 -65 m -100 -200 v 100 l -100 100 m -200 -300 h -100 l -100 100 a 1 1 0 0 0 -50 50 a 1 1 0 0 0 50 -50 m 200 -200 h -200 a 1 1 0 0 0 -65 0 a 1 1 0 0 0 65 0 m 200 -100 h -100 l -100 -100 a 1 1 0 0 0 -50 -50 a 1 1 0 0 0 50 50">
+                </path>
+                <path id="circle" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"
+                    d="M 500 880 a 1 1 0 0 0 -50 50 a 1 1 0 0 0 50 -50"></path>
+                <path id="following" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"
+                    d="M 500 880 l -200 200 v 1200 l 800 175 v 1400 l -800 175 v 1200 l 800 175 v 1200 l -800 175 v 700 a 1 1 0 0 0 0 50 a 1 1 0 0 0 0 -50">
+                </path>
+            </svg>
+        </div>
+        
+        <section class="headline">
+            <h1 id="title">Rémi Caulier</h1>
+            <h2 id="subtitle">Computer Science & Cybersecurity</h2>
+        </section>
+        
+        <div class="wrapper left description">
+            <svg class="little-svg" id="start-little" viewBox="0 0 80 1500" fill="none" stroke="white">
+                <path id="start-path" stroke-width="15" stroke-linejoin="round" stroke-linecap="round"
+                    d="M 40 7 a 1 1 0 0 0 0 50 a 1 1 0 0 0 0 -50 a 1 1 0 0 0 0 50 v 1500"></path>
+            </svg>
+        
+            <svg class="little-svg" viewBox="0 0 80 3000" fill="none" stroke="white">
+                <path id="description-path" stroke-width="15" stroke-linejoin="round" stroke-linecap="round"
+                    d="M 40 7 a 1 1 0 0 0 0 50 a 1 1 0 0 0 0 -50 a 1 1 0 0 0 0 50 v 4000"></path>
+            </svg>
+        
+            <h1 class="desc-title">Who am I ?</h1>
+        
+            <p class="desc-content" id="general">I've been passionate about computer science and cybersecurity for 5 years. I
+                learned programming as a self-taught when I was in high school. Now, I'm in my third-year of a five-year
+                master's-level course in Higher Education. I will graduate with a French engineering degree specialized in
+                computer science and cybersecurity at INSA Hauts-de-France.</p>
+        
+            <p class="desc-content" id="detailled">I started learning programming in high school by learning the
+                Python programming language. I did some science projects like as a PI calculator with colliding blocks. I
+                continued by learning the C language to do advanced graphics applications. Then I wanted to build applications
+                on mobile phones so I learned Java with XML to build native Android apps using Android Studio. Recently I
+                started learning the Flask framework to build web applications in Python with the modern web technologies HTML,
+                CSS and JS.</p>
+        </div>
+        
+        <div class="wrapper right skills">
+            <svg class="little-svg" viewBox="0 0 80 7000" fill="none" stroke="white">
+                <path id="description-path" stroke-width="15" stroke-linejoin="round" stroke-linecap="round"
+                    d="M 40 7 a 1 1 0 0 0 0 50 a 1 1 0 0 0 0 -50 a 1 1 0 0 0 0 50 v 8000"></path>
+            </svg>
+        
+            <h1 class="skills-title">Skills</h1>
+        
+            <div class="content">
+                <div class="skill-tab">
+                    <div class="head">
+                        <h2>Python</h2>
+                        <div class="progress" title="80%">
+                            <div class="progress-value" id="python-progress"></div>
+                        </div>
+        
+                    </div>
+                    <p>Automation and seccurity related scripts, math visualization</p>
+                </div>
+                <img id="python" src="assets/python.png" alt="Python">
+        
+                <div class="skill-tab">
+                    <div class="head">
+                        <h2>C Language</h2>
+                        <div class="progress" title="80%">
+                            <div class="progress-value" id="c-progress"></div>
+                        </div>
+                    </div>
+                    <p>Development of graphical applications such as Sudoku and Sokoban games. Code available on <a
+                            href="https://gitlab.com/Miunn/sudoku-c">GitLab</a></p>
+                </div>
+                <img id="clanguage" src="assets/clanguage.png" alt="C">
+        
+                <div class="skill-tab">
+                    <div class="head">
+                        <h2>HTML, CSS, JS, SQL, Flask</h2>
+                        <div class="progress" title="70%">
+                            <div class="progress-value" id="web-progress"></div>
+                        </div>
+                    </div>
+                    <p>Web development using Flask Python framework, modern web technologies and Jinja
+                        templates. Full stack web development of a parking booking app.</p>
+                </div>
+                <img id="flask" src="assets/flask.png" alt="Flask">
+        
+                <div class="skill-tab">
+                    <div class="head">
+                        <h2>Android</h2>
+                        <div class="progress" title="60%">
+                            <div class="progress-value" id="android-progress"></div>
+                        </div>
+                    </div>
+                    <p>Native android applications development using Java and XML. Experience with Flutter
+                        development.<br>Publications on the <a
+                            href="https://play.google.com/store/apps/developer?id=RCAapps">Google Play Store</a></p>
+                </div>
+                <img id="android" src="assets/android.png" alt="Android">
+        
+                <div class="skill-tab">
+                    <div class="head">
+                        <h2>Linux</h2>
+                        <div class="progress" title="70%">
+                            <div class="progress-value" id="linux-progress"></div>
+                        </div>
+                    </div>
+                    <p>Daily use of Kali Linux (xfce desktop), experience with Ubuntu (GNOME desktop). Use of networking and
+                        hacking tools like <a href="https://nmap.org/">nmap</a> and <a
+                            href="https://www.metasploit.com/">metasploit</a></p>
+                </div>
+                <img id="linux" src="assets/linux.png" alt="Linux">
+        
+                <div class="skill-tab">
+                    <div class="head">
+                        <h2>Microsoft Office</h2>
+                        <div class="progress" title="60%">
+                            <div class="progress-value" id="office-progress"></div>
+                        </div>
+                    </div>
+                    <p>Frequent use of Word, Excel and PowerPoint products from the Microsoft Office suite</p>
+                </div>
+                <img id="word" src="assets/office.png" alt="Microsoft Office Suite">
+            </div>
+        </div>
+        
+        <div class="wrapper left experience">
+            <svg class="little-svg" viewBox="0 0 80 3000" fill="none" stroke="white">
+                <path id="description-path" stroke-width="15" stroke-linejoin="round" stroke-linecap="round"
+                    d="M 40 7 a 1 1 0 0 0 0 50 a 1 1 0 0 0 0 -50 a 1 1 0 0 0 0 50 v 3000"></path>
+            </svg>
+        
+            <h1 class="exp-title">Experiences</h1>
+        
+            <div class="content">
+                <img id="insash" src="assets/insash.png" alt="./insa.sh">
+                <div class="work">
+                    <h2 class="work-headline">Board member of ./insa.sh</h2>
+                    <p class="work-description">Since September 2022</p>
+                    <p class="work-description">Treasurer at the computer science<br>INSA HdF club ./insa.sh</p>
+                </div>
+        
+                <img id="pandrol" src="assets/pandrol.png" alt="Pandrol">
+                <div class="work">
+                    <h2 class="work-headline" id="pandrol">Internship at Pandrol</h2>
+                    <p class="work-description">From July to August 2021</p>
+                    <p class="work-description">Native android development</p>
+                </div>
+        
+        
+                <img id="blondel" src="assets/blondel.png" alt="Groupe Blondel">
+                <div class="work" id="blondel">
+                    <h2 class="work-headline" id="pandrol">Discovery internship at Blondel</h2>
+                    <p class="work-description">From March to April 2017</p>
+                    <p class="work-description">Computer set up</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="wrapper right education">
+            <svg class="little-svg" viewBox="0 0 80 3000" fill="none" stroke="white">
+                <path id="description-path" stroke-width="15" stroke-linejoin="round" stroke-linecap="round"
+                    d="M 40 7 a 1 1 0 0 0 0 50 a 1 1 0 0 0 0 -50 a 1 1 0 0 0 0 50 v 3000"></path>
+            </svg>
+        
+            <h1 class="education-title">Education</h1>
+        
+            <div class="content">
+                <img src="assets/insa.png" alt="INSA HdF" id="insa">
+                <div class="educ">
+                    <h2 class="education-headline">INSA Hauts de France</h2>
+                    <p class="education-description">Since September 2022</p>
+                    <p class="education-description">First year in engineering specialized in Computer Science &
+                        Cybersecurity</p>
+                </div>
+        
+                <img src="assets/insa.png" alt="INSA HdF" id="insa-prepa">
+                <div class="educ">
+                    <h2 class="education-headline">INSA Hauts de France</h2>
+                    <p class="education-description">From September 2020 to July 2022</p>
+                    <p class="educationn-description">Two years of intensive courses in Physics and Mathematics</p>
+                </div>
+        
+                <img src="assets/watteau.png" alt="Watteau" id="high-school">
+                <div class="educ">
+                    <h2 class="education-headline">High school in Watteau</h2>
+                    <p class="education-description">From September 2017 to July 2020</p>
+                    <p class="education-description">High school diploma with high distinctions specialized in Mathematics</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="wrapper left rewards">
+            <svg class="little-svg" viewBox="0 0 80 1500" fill="none" stroke="white">
+                <path id="description-path" stroke-width="15" stroke-linejoin="round" stroke-linecap="round"
+                    d="M 40 7 a 1 1 0 0 0 0 50 a 1 1 0 0 0 0 -50 a 1 1 0 0 0 0 50 v 1500"></path>
+            </svg>
+        
+            <h1 class="rewards-title">Rewards</h1>
+        
+            <div class="content">
+                <img src="assets/codinsa.png" alt="Cod'INSA" id="codinsa">
+                <div class="reward">
+                    <h2 class="reward-headline">Cod'INSA 2022</h2>
+                    <p class="reward-description">6th place</p>
+                </div>
+        
+                <img src="assets/codinsa.png" alt="Cod'INSA" id="codinsa21">
+                <div class="reward">
+                    <h2 class="reward-headline">Cod'INSA 2021</h2>
+                    <p class="reward-description">7th place</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
