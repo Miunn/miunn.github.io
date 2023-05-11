@@ -2,7 +2,7 @@
 
 var quantities = ["80%", "80%", "70%", "60%", "70%", "60%"]
 
-function observerCallback(entries, observer) {
+function skillsObserverCallback(entries, observer) {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             let elmt = entry.target;
@@ -35,19 +35,18 @@ function observerCallback(entries, observer) {
                     break;
             }
         }
-    })
+    });
 }
 
 let options = {
     root: null, // Default root -> browser viewport
     rootMargin: "0px",
-    threshold: 0.5  // Invoke callback when 100% of target is visible
+    threshold: 0.5  // Invoke callback when 50% of target is visible
 }
 
-let observer = new IntersectionObserver(observerCallback, options);
+let observer = new IntersectionObserver(skillsObserverCallback, options);
 
 let targets = document.getElementsByClassName("progress-value");
-console.log(targets.length);
 for (i = 0; i < targets.length; i++) {
     console.log(targets.item(i));
     observer.observe(targets.item(i));
@@ -57,7 +56,7 @@ for (i = 0; i < targets.length; i++) {
 
 const elScrollable = document.querySelector("html")
 const elNav = document.querySelector("#links-container");
-const threshold = window.innerHeight - 75 - 0.05*window.innerHeight;
+const threshold = window.innerHeight - 76 - 0.05*window.innerHeight;
 console.log(window.innerHeight, threshold);
 const handleNav = () => {
   const scrollTop = elScrollable.scrollTop;
