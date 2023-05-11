@@ -1,3 +1,5 @@
+// -------- Observer for skills container -------- //
+
 var quantities = ["80%", "80%", "70%", "60%", "70%", "60%"]
 
 function observerCallback(entries, observer) {
@@ -50,3 +52,19 @@ for (i = 0; i < targets.length; i++) {
     console.log(targets.item(i));
     observer.observe(targets.item(i));
 }
+
+// -------- Listener for links container -------- //
+
+const elScrollable = document.querySelector("html")
+const elNav = document.querySelector("#links-container");
+const threshold = window.innerHeight - 75 - 0.05*window.innerHeight;
+console.log(window.innerHeight, threshold);
+const handleNav = () => {
+  const scrollTop = elScrollable.scrollTop;
+  console.log(scrollTop);
+  elNav.classList.toggle("top-fixed", scrollTop > threshold);
+};
+
+addEventListener("scroll", handleNav)
+addEventListener("resize", handleNav)
+handleNav();
