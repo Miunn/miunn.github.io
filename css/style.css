@@ -6,10 +6,14 @@
     font-family: 'Fragment Mono', monospace;
 }
 
+p {
+    text-align: justify;
+}
+
 body {
     background-color: black;
 }
 
-p {
-    text-align: justify;
+a {
+    text-decoration: none;
 }
